@@ -20,3 +20,6 @@ To run a security check via npm: npm run security-check
 ### Linting ###
 To run lint: npm run lint
 To run lint:watch: npm run lint:watch
+
+### Linting ###
+To run mocha tests: npm test OR npm t
