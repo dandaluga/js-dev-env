@@ -1,2 +1,4 @@
-# pluralsight-js-dev-env
-Pluralsight Traininf for JS Development Environment
+# js-dev-env
+JS Development Environment
+
+To start the server: npm start -s
