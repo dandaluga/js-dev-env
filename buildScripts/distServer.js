@@ -11,6 +11,10 @@ const app = express();
 app.use(compression());
 app.use(express.static('dist'));
 
+app.get('/', function(req, res) {
+  res.sendFile(path.join(__dirname, '../dist/index.html'));
+});
+
 app.get('/users', function (req, res) {
   res.json([
     {"id": 1,"firstName":"Dan","lastName":"DaLuga","email":"dan@gmail.com"},
@@ -18,10 +22,6 @@ app.get('/users', function (req, res) {
     {"id": 3,"firstName":"Samantha","lastName":"DaLuga","email":"samantha@gmail.com"},
     {"id": 4,"firstName":"Abel","lastName":"DaLuga","email":"abel@gmail.com"}
   ]);
-});
-
-app.get('/', function(req, res) {
-  res.sendFile(path.join(__dirname, '../dist/index.html'));
 });
 
 app.listen(port, function (err) {

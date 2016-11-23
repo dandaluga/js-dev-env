@@ -27,3 +27,6 @@ To run mocha tests: npm test OR npm t
 ### Generate Mock Data ###
 To generate mock data: npm run generate-mock-data
 To start your server for the generate api: npm run start-mockapi
+
+### Build Production ###
+npm run build -s
