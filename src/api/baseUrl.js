@@ -1,7 +1,7 @@
 // To use the mocked data: http://localhost:3000/?useMockApi=true
 
 export default function getBaseUrl() {
-  return getQueryStringParameterByName('useMockApi') ? 'http://localhost:3001/' : '/';
+  return getQueryStringParameterByName('useMockApi') ? 'http://localhost:3001/' : 'https://vast-wave-52030.herokuapp.com/';
 }
 
 function getQueryStringParameterByName(name, url) {

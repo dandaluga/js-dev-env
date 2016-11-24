@@ -30,3 +30,12 @@ To start your server for the generate api: npm run start-mockapi
 
 ### Build Production ###
 npm run build -s
+
+### Deployment Notes ###
+Development: npm start
+Production build: npm run build
+Production deploy: npm run deploy
+
+### Notes ###
+Always try to build static domains (Then you can use something like surge to host your site.)
+
